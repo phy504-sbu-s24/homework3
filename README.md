@@ -31,23 +31,20 @@
 
 2. We'll write a simple code that does projectile motion.
 
-   * Create a `struct` called `Projectile` with 3 data members: `t`, `x`, y`
+   * Create a `struct` called `Projectile` with 3 data members: `t`, `x`, `y`
 
-   * As the user for an angle (positive, from the horizontal), initial
-     velocity, and a time interval $\Delta t$ at which we want to
-     store the projectile's position.
-     
+   * Ask the user for an angle (positive, from the horizontal),
+     initial velocity, and a time interval $\Delta t$ at which we want
+     to store the projectile's position.
+
    * Create a vector of `Projectile`
-   
+
    * Start at $t = 0$ and loop for as long as the projectile is in the air and:
-   
+
      * Compute the current $x$ and $y$ position of the projectile
-     
+
      * If $y < 0$ exit the loop; otherwise, store the position in your vector
-     
+
      * Increment the time by $\Delta t$
-     
+
    * Finally, output the trajectory as rows with 3 columns: $t$, $x$, and $y$.
-   
-   
-   
