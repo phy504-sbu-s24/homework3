@@ -10,13 +10,23 @@
 
 1. In class, we created a [simple matrix](https://zingale.github.io/phy504/cxx-matrix-example.html)
    as `std::vector<std::vector<double>>`.  A simple version of that code
-   is in this repo as `simple_matrix.cpp`.
+   is in this repo for reference, as `simple_matrix.cpp`.
 
-   As written, the matrix, `A`, is $4\times 4$, but we'll consider it to be
-   $M\times N$ and try to work for a general matrix.
+   Using the same datatypes, `real_vec_t` and `real_mat_t`, write a new code
+   that does the following:
 
-   Modify that code to do the following:
+   * Read in from the user the size, $N$, for a square matrix.
 
-   * Read in from the user N numbers and store them in a vector call `x`.
+   * Create an $N \times N$ [Hilbert matrix](https://en.wikipedia.org/wiki/Hilbert_matrix)
+     by setting the values as:
 
-   * Compute the matrix vector product $A x$
+     $$H_{ij} = \frac{1}{i + j + 1}$$
+
+     where $i = 0, \ldots, N-1$, and similarly for $j$.
+
+   * Read in from the user $N$ numbers and store them in a vector call $x$
+
+   * Compute the matrix vector product $A x$ by writing the appropriate loops
+     and output the result.
+
+2.
