@@ -48,7 +48,7 @@ int main() {
 
         p.t += dt;
         p.x = x0 + vx0 * p.t;
-        p.y = y0 + vx0 * p.t + 0.5 * g * std::pow(p.t, 2);
+        p.y = y0 + vy0 * p.t + 0.5 * g * std::pow(p.t, 2);
 
         trajectory.push_back(p);
 
